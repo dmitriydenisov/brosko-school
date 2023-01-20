@@ -15,3 +15,10 @@ const teamSlider = new Swiper(".team__slider", {
     el: ".team__pagination",
   },
 });
+
+document.querySelector(".header__btn").addEventListener("click", () => {
+  document.querySelector(".header-menu").classList.add("active");
+});
+document.querySelector(".header__btn-exit").addEventListener("click", () => {
+  document.querySelector(".header-menu").classList.remove("active");
+});
