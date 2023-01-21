@@ -1298,6 +1298,9 @@ a {
   .footer__inner {
     width: 100%;
   }
+  .footer__addresses {
+    width: 280px;
+  }
 }
 @media (min-width: 1440px) {
   .container {
@@ -1530,5 +1533,8 @@ a {
   }
   .footer__inner {
     width: 85%;
+  }
+  .footer__addresses {
+    width: 326px;
   }
 }
