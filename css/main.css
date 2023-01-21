@@ -259,6 +259,27 @@ a {
   align-items: center;
   justify-content: center;
 }
+.cirle-text {
+  position: absolute;
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+
+  color: #e7eef8;
+}
+.cirle-text span {
+  position: absolute;
+  top: -53px;
+  text-transform: uppercase;
+  display: inline-block;
+  transform-origin: 0 53px;
+}
 .slider__image {
   overflow: hidden;
   width: 1000px;
