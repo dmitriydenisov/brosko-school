@@ -1034,6 +1034,14 @@ a {
     left: 155px;
     bottom: 0px;
   }
+  .gymnasium__case {
+    width: auto;
+    cursor: pointer;
+    transition: all ease 0.3s;
+  }
+  .gymnasium__case:hover {
+    transform: scale(1.1);
+  }
 }
 @media (min-width: 1280px) {
   .container {
@@ -1284,6 +1292,12 @@ a {
     background-repeat: no-repeat;
     background-size: 39%;
   }
+  .menu__item {
+    margin-right: 25px;
+  }
+  .footer__inner {
+    width: 100%;
+  }
 }
 @media (min-width: 1440px) {
   .container {
@@ -1338,9 +1352,7 @@ a {
     color: #ffffff;
     width: 1235px;
   }
-  .gymnasium__case {
-    width: auto;
-  }
+
   .gymnasium__cases {
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1512,5 +1524,11 @@ a {
   }
   .feedback {
     background-size: auto;
+  }
+  .menu__item {
+    margin-right: 75px;
+  }
+  .footer__inner {
+    width: 85%;
   }
 }
