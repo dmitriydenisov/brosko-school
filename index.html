@@ -242,31 +242,36 @@
           <div class="additional-education__tabs">
             <div
               class="additional-education__tab additional-education__tab--top"
+              data-variant="top"
             >
               Топ направления
             </div>
             <div
               class="additional-education__tab additional-education__tab--british"
+              data-variant="British"
             >
               British Primary Curriculum
             </div>
             <div
               class="additional-education__tab additional-education__tab--sport"
+              data-variant="sport"
             >
               Спортивная программа
             </div>
             <div
               class="additional-education__tab additional-education__tab--log"
+              data-variant="speech"
             >
               Логопедическая служба
             </div>
             <div
               class="additional-education__tab additional-education__tab--psi"
+              data-variant="psychology"
             >
               Психологическая служба
             </div>
           </div>
-          <div class="additional-education__items">
+          <div class="additional-education__items active" data-variant="top">
             <div
               class="additional-education__item additional-education__item--log"
             >
@@ -282,6 +287,39 @@
             >
               <div class="additional-education__title">Наука</div>
             </div>
+            <div
+              class="additional-education__item additional-education__item--sport"
+            >
+              <div class="additional-education__title">Теннис</div>
+            </div>
+            <div
+              class="additional-education__item additional-education__item--sport"
+            >
+              <div class="additional-education__title">Футбол</div>
+            </div>
+          </div>
+          <div class="additional-education__items" data-variant="speech">
+            <div
+              class="additional-education__item additional-education__item--log"
+            >
+              <div class="additional-education__title">Логопед</div>
+            </div>
+          </div>
+          <div class="additional-education__items" data-variant="British">
+            <div
+              class="additional-education__item additional-education__item--british"
+            >
+              <div class="additional-education__title">Математика</div>
+            </div>
+          </div>
+          <div class="additional-education__items" data-variant="psychology">
+            <div
+              class="additional-education__item additional-education__item--psi"
+            >
+              <div class="additional-education__title">Наука</div>
+            </div>
+          </div>
+          <div class="additional-education__items" data-variant="sport">
             <div
               class="additional-education__item additional-education__item--sport"
             >
@@ -316,7 +354,7 @@
                 <p class="stocks__title">Спортивная программа</p>
                 <p class="stocks__advantage">всего</p>
                 <div class="stocks__label">15 000 руб в месяц</div>
-                <button class="stocks__btn">Записаться</button>
+                <button class="btn stocks__btn">Записаться</button>
                 <a href="#" class="stocks__more">Подробнее</a>
               </div>
               <div class="stocks__img">
@@ -399,103 +437,300 @@
         <div class="container">
           <h2 class="heading heading--blue heading--arrow">Команда</h2>
           <div class="team__tabs">
-            <div class="team__tab active">Гимназия</div>
-            <div class="team__tab">Детский сад на 3-ем Неопалимовском</div>
-            <div class="team__tab">Детский сад на Пушкаревом</div>
+            <div class="team__tab active" data-team="gymnasium">Гимназия</div>
+            <div class="team__tab" data-team="nepalimovsky">
+              Детский сад на 3-ем Неопалимовском
+            </div>
+            <div class="team__tab" data-team="pushkarev">
+              Детский сад на Пушкаревом
+            </div>
           </div>
           <div class="team__content">
-            <div class="team__slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide team__slide">
-                  <div class="team__items">
-                    <div class="team__item">
-                      <div class="team__img">
-                        <img src="image/content/team/item-1.jpg" alt="" />
-                      </div>
-                      <!--prettier-ignore-->
-                      <div class="team__name">Кананчев
+            <div
+              class="team__wrapper team__wrapper--active"
+              data-team="gymnasium"
+            >
+              <div class="team__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-1.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Кананчев
                         Зураб Вахтангович</div>
-                      <div class="team__description">
-                        Директор гимназии Brosko School
+                        <div class="team__description">
+                          Директор гимназии Brosko School
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide team__slide">
-                  <div class="team__items">
-                    <div class="team__item">
-                      <div class="team__img">
-                        <img src="image/content/team/item-2.jpg" alt="" />
-                      </div>
-                      <!--prettier-ignore-->
-                      <div class="team__name">Неверова
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-2.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Неверова
                         Надежда Дмитриевна</div>
-                      <div class="team__description">
-                        Руководитель ДОУ Brosko Junior
+                        <div class="team__description">
+                          Руководитель ДОУ Brosko Junior
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide team__slide">
-                  <div class="team__items">
-                    <div class="team__item">
-                      <div class="team__img">
-                        <img src="image/content/team/item-3.jpg" alt="" />
-                      </div>
-                      <!--prettier-ignore-->
-                      <div class="team__name">Судьина
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-3.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Судьина
                         Елена Александровна</div>
-                      <div class="team__description">
-                        Заведующая учебной частью начальных классов
+                        <div class="team__description">
+                          Заведующая учебной частью начальных классов
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide team__slide">
-                  <div class="team__items">
-                    <div class="team__item">
-                      <div class="team__img">
-                        <img src="image/content/team/item-4.jpg" alt="" />
-                      </div>
-                      <!--prettier-ignore-->
-                      <div class="team__name">Айрапетян
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-4.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Айрапетян
                         Мерри Мгеровна</div>
-                      <div class="team__description">
-                        Администратор Brosko Junior
+                        <div class="team__description">
+                          Администратор Brosko Junior
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide team__slide">
-                  <div class="team__items">
-                    <div class="team__item">
-                      <div class="team__img">
-                        <img src="image/content/team/item-5.jpg" alt="" />
-                      </div>
-                      <!--prettier-ignore-->
-                      <div class="team__name">Калач
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-5.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Калач
                         Екатерина Сергеевна</div>
-                      <div class="team__description">
-                        Руководитель программ дополнительного образования
+                        <div class="team__description">
+                          Руководитель программ дополнительного образования
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide team__slide">
-                  <div class="team__items">
-                    <div class="team__item">
-                      <div class="team__img">
-                        <img src="image/content/team/item-1.jpg" alt="" />
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-1.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">слайд 6</div>
+                        <div class="team__description">слайд 6</div>
                       </div>
-                      <!--prettier-ignore-->
-                      <div class="team__name">слайд 6</div>
-                      <div class="team__description">слайд 6</div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="team__pagination"></div>
             </div>
-            <div class="team__pagination"></div>
+            <div class="team__wrapper" data-team="nepalimovsky">
+              <div class="team__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-2.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Кананчев
+                          Зураб Вахтангович</div>
+                        <div class="team__description">
+                          Директор гимназии Brosko School
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-2.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Неверова
+                          Надежда Дмитриевна</div>
+                        <div class="team__description">
+                          Руководитель ДОУ Brosko Junior
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-3.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Судьина
+                          Елена Александровна</div>
+                        <div class="team__description">
+                          Заведующая учебной частью начальных классов
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-4.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Айрапетян
+                          Мерри Мгеровна</div>
+                        <div class="team__description">
+                          Администратор Brosko Junior
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-5.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Калач
+                          Екатерина Сергеевна</div>
+                        <div class="team__description">
+                          Руководитель программ дополнительного образования
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-1.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">слайд 6</div>
+                        <div class="team__description">слайд 6</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team__pagination"></div>
+            </div>
+            <div class="team__wrapper" data-team="pushkarev">
+              <div class="team__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-3.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Кананчев
+                          Зураб Вахтангович</div>
+                        <div class="team__description">
+                          Директор гимназии Brosko School
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-2.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Неверова
+                          Надежда Дмитриевна</div>
+                        <div class="team__description">
+                          Руководитель ДОУ Brosko Junior
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-3.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Судьина
+                          Елена Александровна</div>
+                        <div class="team__description">
+                          Заведующая учебной частью начальных классов
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-4.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Айрапетян
+                          Мерри Мгеровна</div>
+                        <div class="team__description">
+                          Администратор Brosko Junior
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-5.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">Калач
+                          Екатерина Сергеевна</div>
+                        <div class="team__description">
+                          Руководитель программ дополнительного образования
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide team__slide">
+                    <div class="team__items">
+                      <div class="team__item">
+                        <div class="team__img">
+                          <img src="image/content/team/item-1.jpg" alt="" />
+                        </div>
+                        <!--prettier-ignore-->
+                        <div class="team__name">слайд 6</div>
+                        <div class="team__description">слайд 6</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team__pagination"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -511,7 +746,7 @@
                 type="text"
                 placeholder="Телефон"
               />
-              <button>Записать</button>
+              <input type="submit" value="Записать" />
               <p class="feedback__approval">
                 Нажимая кнопку вы даете согласие на обработку персональных
                 данных
@@ -572,6 +807,51 @@
         </div>
       </div>
     </footer>
+    <div class="popup-wrapper">
+      <div class="popup">
+        <h2 class="poup__title">Записать ребенка</h2>
+        <p class="popup__subtitle">
+          Заполните данные и с вами свяжется наш менеджер
+        </p>
+        <forn class="poup__form">
+          <input
+            type="text"
+            class="popup__input"
+            placeholder="Ваше имя*"
+          /><input
+            type="text"
+            class="popup__input"
+            placeholder="Телефон*"
+          /><input type="text" class="popup__input" placeholder="E-mail" />
+          <div class="popup__radio">
+            <div class="radio-btn">
+              <input type="radio" id="gymnasium" name="popup__radio" />
+              <label for="gymnasium">Гимназия на Пушкаревом</label>
+            </div>
+            <div class="radio-btn">
+              <input type="radio" id="pushkarev-garden" name="popup__radio" />
+              <label for="pushkarev-garden">Детский сад на Пушкаревом</label>
+            </div>
+            <div class="radio-btn">
+              <input
+                type="radio"
+                id="garden-nepalimovsky"
+                name="popup__radio"
+              />
+              <label for="garden-nepalimovsky"
+                >Детский сад на 3-м Неопалимовском</label
+              >
+            </div>
+          </div>
+
+          <div class="popup__label">*Обязательные поля</div>
+          <input type="submit" class="popup__btn" value="Записать" />
+          <div class="popup__approval">
+            Нажимая кнопку вы даете согласие на обработку персональных данных
+          </div>
+        </forn>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
