@@ -30,7 +30,6 @@ a {
 .container {
   width: 1800px;
   margin: 0 auto;
-  /* padding: 60px 0; */
 }
 
 .header,
@@ -59,7 +58,6 @@ a {
   cursor: pointer;
 }
 .header-menu {
-  /* display: none; */
   margin-right: -100%;
   position: fixed;
   top: 0;
@@ -384,7 +382,6 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 7px;
-  /* line-height: 20px; */
 
   color: #fff;
   background-color: #fff;
@@ -414,7 +411,6 @@ a {
 .additional-education__items.active {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   width: 95%;
 }
 
@@ -501,7 +497,6 @@ a {
 .stocks__items {
   display: flex;
   justify-content: space-between;
-  /* width: 90%; */
   flex-wrap: wrap;
 }
 .stocks__item {
@@ -898,7 +893,6 @@ a {
   font-weight: 600;
   font-size: 40px;
   line-height: 49px;
-  /* identical to box height */
 
   margin-bottom: 32px;
   color: #ffffff;
@@ -908,7 +902,6 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
 
   color: #ffffff;
 }
@@ -944,7 +937,6 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
 
   color: #e7eef8;
   width: 100%;
@@ -958,7 +950,6 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
 
   color: #e7eef8;
 }
@@ -968,7 +959,6 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
 
   color: #ffffff;
   margin-bottom: 25px;
@@ -1048,9 +1038,6 @@ a {
     left: 155px;
     bottom: 0px;
   }
-  /* .gymnasium__case {
-    width: 45%;
-  } */
 }
 @media (min-width: 1280px) {
   .container {
@@ -1167,8 +1154,6 @@ a {
   .additional-education__item:after {
     width: 177px;
     height: 177px;
-    /* width: 140px;
-    height: 140px; */
   }
   .additional-education__item--log:before {
     content: url(../image/content/additional/log.svg);
@@ -1230,6 +1215,48 @@ a {
   }
   .stocks__img img {
     width: 100%;
+  }
+  .popup {
+    height: 575px;
+
+    padding: 11px 56px;
+  }
+  .poup__title {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .popup__subtitle {
+    font-size: 12px;
+    line-height: 1;
+  }
+  .radio-btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px;
+    line-height: 34px;
+    border: 2px solid #5b8bcf;
+
+    border-radius: 6px;
+    user-select: none;
+    width: 100%;
+    margin-bottom: 16px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .radio-btn input[type="radio"]:checked + label {
+    background: #31aa47;
+  }
+  .radio-btn input[type="radio"] {
+    display: none;
+  }
+  .popup__input {
+    padding: 12px;
+    line-height: 1;
   }
 }
 @media (min-width: 1440px) {
@@ -1346,32 +1373,6 @@ a {
     right: 40px;
     top: 40px;
   }
-  /* .additional-education__item--log:before {
-    content: url(../image/content/additional/log.svg);
-    width: 100px;
-    height: 100px;
-  }
-  .additional-education__item--british:before {
-    content: url(../image/content/additional/brit.svg);
-    width: 78px;
-    height: 100px;
-  }
-  .additional-education__item--psi:before {
-    content: url(../image/content/additional/psi.svg);
-    width: 100px;
-    height: 100px;
-  }
-  .additional-education__item--sport:before {
-    content: url(../image/content/additional/sport1.svg);
-    width: 100px;
-    height: 100px;
-  }
-  .additional-education__item--sport
-    + .additional-education__item--sport:before {
-    content: url(../image/content/additional/sport2.svg);
-    width: 100px;
-    height: 100px;
-  } */
   .additional-education__title {
     bottom: 32px;
     left: 32px;
@@ -1457,5 +1458,24 @@ a {
   }
   .stocks__item {
     height: auto;
+  }
+  .popup {
+    height: auto;
+  }
+  .poup__title {
+    font-size: 40px;
+    line-height: 49px;
+
+    margin-bottom: 32px;
+  }
+  .popup__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .popup__input {
+    padding: 16px;
+  }
+  .radio-btn label {
+    padding: 16px;
   }
 }
