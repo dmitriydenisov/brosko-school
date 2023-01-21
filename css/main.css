@@ -87,10 +87,7 @@ a {
   background: transparent;
   cursor: pointer;
 }
-.header-menu__body {
-  width: 60%;
-  margin-left: 170px;
-}
+
 .header-menu__address {
   position: relative;
   padding-left: 40px;
@@ -799,9 +796,7 @@ a {
   flex-wrap: wrap;
   width: 440px;
 }
-.footer__contacts--menu {
-  width: 60%;
-}
+
 .footer__contact {
   position: relative;
   font-style: normal;
@@ -1258,6 +1253,16 @@ a {
     padding: 12px;
     line-height: 1;
   }
+  .header-menu__top {
+    margin-bottom: 40px;
+  }
+  .header-menu__body {
+    width: 60%;
+    margin-left: 15px;
+  }
+  .footer__contacts--menu {
+    width: 85%;
+  }
 }
 @media (min-width: 1440px) {
   .container {
@@ -1477,5 +1482,15 @@ a {
   }
   .radio-btn label {
     padding: 16px;
+  }
+  .header-menu__top {
+    margin-bottom: 160px;
+  }
+  .header-menu__body {
+    width: 60%;
+    margin-left: 170px;
+  }
+  .footer__contacts--menu {
+    width: 60%;
   }
 }
