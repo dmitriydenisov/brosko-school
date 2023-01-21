@@ -9,10 +9,25 @@ const headerSlider = new Swiper(".swiper", {
 });
 
 const teamSlider = new Swiper(".team__slider", {
-  slidesPerView: 5,
+  slidesPerView: 1,
   spaceBetween: 15,
   pagination: {
     el: ".team__pagination",
+  },
+  breakpoints: {
+    900: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1600: {
+      slidesPerView: 4,
+    },
+    1920: {
+      slidesPerView: 5,
+    },
   },
 });
 
