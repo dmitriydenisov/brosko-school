@@ -1,3 +1,10 @@
+const text = document.querySelector(".cirle-text");
+text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+let element = document.querySelectorAll("span");
+for (let i = 0; i < element.length; i++) {
+  element[i].style.transform = "rotate(" + i * 16 + "deg)";
+}
+
 const headerSlider = new Swiper(".swiper", {
   loop: true,
   pagination: {
@@ -30,13 +37,6 @@ const teamSlider = new Swiper(".team__slider", {
     },
   },
 });
-
-const text = document.querySelector(".cirle-text");
-text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
-let element = document.querySelectorAll("span");
-for (let i = 0; i < element.length; i++) {
-  element[i].style.transform = "rotate(" + i * 16 + "deg)";
-}
 
 //Menu
 document.querySelector(".header__btn").addEventListener("click", () => {
