@@ -20,6 +20,8 @@ const teamSlider = new Swiper(".team__slider", {
   spaceBetween: 15,
   pagination: {
     el: ".team__pagination",
+
+    clickable: true,
   },
   breakpoints: {
     700: {
