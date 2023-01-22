@@ -64,7 +64,7 @@ a {
   right: -100%;
   bottom: 0;
   z-index: 45;
-  transition: all ease 0.3s;
+  transition: all ease 0.5s;
   background: url(../image/system/bg/menu-bg.svg) no-repeat right 250px center,
     #2e5faa;
 }
