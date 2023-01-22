@@ -63,7 +63,7 @@ a {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 45;
   transition: all ease 0.3s;
   background: url(../image/system/bg/menu-bg.svg) no-repeat right 250px center,
     #2e5faa;
