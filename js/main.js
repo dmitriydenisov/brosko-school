@@ -15,7 +15,7 @@ const teamSlider = new Swiper(".team__slider", {
     el: ".team__pagination",
   },
   breakpoints: {
-    900: {
+    700: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
