@@ -203,15 +203,18 @@ a {
 .slider__play {
   position: absolute;
   background: #2e5faa;
-  box-shadow: 10px 14px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
-  width: 110px;
-  height: 110px;
-  right: -60px;
-  bottom: 0;
+  width: 40px;
+  height: 40px;
+  right: 29px;
+  bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.slider__play img {
+  width: 30px;
 }
 .cirle-text {
   position: absolute;
@@ -279,6 +282,12 @@ a {
   right: 0;
   background-color: #fff;
   border-radius: 50%;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: auto;
+  left: 107px;
+  bottom: 29px;
 }
 
 .social {
@@ -1047,9 +1056,8 @@ a {
 
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    width: auto;
-    left: 155px;
-    bottom: 0px;
+    left: 177px;
+    bottom: 39px;
   }
   .slider__title {
     font-size: 104px;
@@ -1177,21 +1185,17 @@ a {
   }
 }
 @media (min-width: 900px) {
-  .social {
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    width: auto;
-  }
-  .social__link + .social__link {
-    margin-top: 35px;
-  }
   .stocks__item {
     padding: 26px 36px;
   }
   .stocks__title {
     font-size: 64px;
     line-height: 64px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    left: 175px;
+    bottom: 38px;
   }
   .stocks__advantage {
     font-size: 32px;
@@ -1213,10 +1217,6 @@ a {
   .team__tab {
     font-size: 16px;
   }
-  /* .team__img {
-    width: 262px;
-    height: 262px;
-  } */
   .additional-education__tab + .additional-education__tab {
     margin-top: 0;
   }
@@ -1228,8 +1228,22 @@ a {
   .container {
     width: 1200px;
   }
+  .social {
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .social__link + .social__link {
+    margin-top: 35px;
+  }
   .slider__text {
     width: 200px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    left: 113px;
+    bottom: 70px;
   }
   .slider__image {
     display: block;
@@ -1265,7 +1279,9 @@ a {
     height: 50px;
     right: -156px;
     bottom: -20px;
+    box-shadow: 10px 14px 24px rgba(0, 0, 0, 0.25);
   }
+
   .slider__play img {
     width: 25px;
   }
@@ -1533,8 +1549,8 @@ a {
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    left: 40px;
-    bottom: 138px;
+    left: 33px;
+    bottom: 188px;
   }
   .gymnasium__slogan {
     font-style: normal;
@@ -1725,5 +1741,12 @@ a {
   }
   .footer__addresses {
     width: 326px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    left: 84px;
   }
 }
