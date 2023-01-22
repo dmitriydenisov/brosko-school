@@ -3,9 +3,9 @@ const headerSlider = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
   },
-  // autoplay: {
-  //   delay: 3500,
-  // },
+  autoplay: {
+    delay: 2500,
+  },
 });
 
 const teamSlider = new Swiper(".team__slider", {
