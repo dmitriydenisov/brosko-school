@@ -9,14 +9,15 @@ const headerSlider = new Swiper(".swiper", {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
-  autoplay: {
-    delay: 2500,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  // },
 });
 
 const teamSlider = new Swiper(".team__slider", {
-  slidesPerView: 1,
+  slidesPerView: 1.2,
   spaceBetween: 15,
   pagination: {
     el: ".team__pagination",

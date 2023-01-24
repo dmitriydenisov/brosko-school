@@ -28,7 +28,7 @@ a {
 }
 
 .container {
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 .header,
@@ -312,8 +312,8 @@ a {
 
 .heading {
   font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
+  font-weight: 800;
+  font-size: 32px;
 
   color: #ffffff;
 }
@@ -324,8 +324,8 @@ a {
 .gymnasium__slogan {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 20px;
   color: #ffffff;
   width: 100%;
 }
@@ -352,7 +352,9 @@ a {
 .gymnasium__description {
   background: #e7eef8;
   border-radius: 0 0 8px 8px;
-  padding: 32px 40px;
+  padding: 32px 10px;
+  display: flex;
+  flex-direction: column;
 }
 .gymnasium__title img {
   max-width: 100%;
@@ -360,8 +362,8 @@ a {
 .gymnasium__text {
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 17px;
 
   color: #173d76;
 }
@@ -372,10 +374,11 @@ a {
   color: #2e5faa;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 12px;
+  line-height: 15px;
   display: inline-block;
   padding: 8px 16px 8px 36px;
+  margin: 0 auto;
 }
 
 .gymnasium__mark:after {
@@ -394,17 +397,23 @@ a {
 .additional-education {
   padding: 56px 0;
 }
+.tabs-mobile {
+  width: calc(100vw - 15px);
+  overflow: hidden;
+}
 .additional-education__tabs {
   margin-top: 30px;
   margin-bottom: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 75%;
-  flex-wrap: wrap;
+  /* width: 75%; */
+  /* flex-wrap: wrap; */
   margin: 30px auto;
+  overflow-x: auto;
 }
 .additional-education__tab {
+  white-space: nowrap;
   padding: 8px;
   font-style: normal;
   font-weight: 600;
@@ -418,6 +427,7 @@ a {
 }
 .additional-education__tab + .additional-education__tab {
   margin-top: 5px;
+  margin-left: 10px;
 }
 .additional-education__tab--top {
   color: #173d76;
@@ -527,18 +537,19 @@ a {
 }
 
 .stocks {
-  padding: 56px 0;
   background: #6287bf;
 }
 .stocks__items {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100vw;
+  margin-left: -15px;
 }
 .stocks__item {
   width: 100%;
   border-radius: 8px;
-  padding: 19px 9px;
+  padding: 19px 40px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -549,7 +560,7 @@ a {
 .friends {
   background: #173d76;
   color: #e7eef8;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .sports {
   background: #fed059;
@@ -559,7 +570,7 @@ a {
 .stocks__title {
   font-style: normal;
   font-weight: 800;
-  font-size: 23px;
+  font-size: 40px;
   line-height: 1;
 
   margin: 0;
@@ -568,20 +579,22 @@ a {
 .stocks__advantage {
   font-style: normal;
   font-weight: 800;
-  font-size: 19px;
-  line-height: 39px;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin-top: 0;
 }
 .stocks__label {
   font-style: normal;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 28px;
   line-height: 1;
 
   color: #ffffff;
 
   transform: rotate(-4deg);
   white-space: pre-line;
-  margin-top: -25px;
+  margin-top: -10px;
   margin-bottom: 15px;
   border-radius: 8px;
   display: inline-block;
@@ -594,19 +607,26 @@ a {
   background: #31aa47;
   margin-bottom: 30px;
 }
+.stocks__text {
+  display: flex;
+  flex-direction: column;
+}
 .stocks__btn {
   background: #31aa47;
   border-radius: 30px;
   padding: 14px 28px;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
 
   color: #ffffff;
+  margin: 0 auto;
 }
 .stocks__more {
-  margin-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -623,7 +643,7 @@ a {
 }
 .advantage__item {
   display: flex;
-  width: 554px;
+  width: 100%;
   background: #173d76;
   border-radius: 8px;
   color: #fff;
@@ -631,7 +651,23 @@ a {
   padding: 16px;
 }
 .advantage__circle {
-  display: none;
+  display: block;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #5ac1d2;
+  color: #173d76;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+
+  color: #173d76;
+  text-transform: uppercase;
 }
 /* .advantage__text {
   width: 383px;
@@ -639,15 +675,15 @@ a {
 .advantage__title {
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 20px;
+  line-height: 24px;
   color: #e7eef8;
 }
 .advantage__description {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 15px;
   margin: 0;
 
   color: #e7eef8;
@@ -659,6 +695,7 @@ a {
   margin-top: 40px;
   display: flex;
   align-items: center;
+  overflow-x: auto;
 }
 
 .team__tab {
@@ -672,6 +709,7 @@ a {
   color: #31aa47;
   padding: 3px 15px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .team__tab.active {
@@ -687,7 +725,7 @@ a {
   background-color: #2e5faa;
 }
 .team__content {
-  width: 95%;
+  width: calc(100vw - 15px);
 }
 .team__wrapper {
   display: none;
@@ -861,9 +899,9 @@ a {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-
+  flex-shrink: 0;
   color: #e7eef8;
-  width: 326px;
+  margin-bottom: 16px;
 }
 .footer__address {
   margin-bottom: 16px;
@@ -876,7 +914,7 @@ a {
   line-height: 17px;
 
   color: #ffffff;
-  margin-right: 74px;
+  margin-right: 60px;
   margin-bottom: 16px;
 }
 .popup-wrapper {
@@ -1002,6 +1040,12 @@ a {
   width: 205px;
   display: inline-block;
 }
+.footer__contacts {
+  margin: 25px 0;
+}
+.menu {
+  column-count: 2;
+}
 @media (min-width: 700px) {
   .container {
     margin: 0 auto;
@@ -1013,6 +1057,9 @@ a {
   }
   .heading {
     font-size: 42px;
+  }
+  .heading span {
+    display: none;
   }
   .heading--arrow {
     position: relative;
@@ -1123,8 +1170,10 @@ a {
   .stocks__advantage {
     font-size: 32px;
     line-height: 39px;
+    text-align: left;
   }
   .stocks__label {
+    margin-top: -25px;
     font-size: 48px;
     line-height: 48px;
   }
@@ -1132,6 +1181,7 @@ a {
     padding: 14px 28px;
     font-size: 24px;
     line-height: 29px;
+    margin: 0;
   }
   .stocks__more {
     font-size: 24px;
@@ -1141,23 +1191,10 @@ a {
     width: 554px;
   }
   .advantage__circle {
-    display: block;
-    flex-shrink: 0;
-    border-radius: 50%;
-    background: #5ac1d2;
-    color: #173d76;
     width: 68px;
     height: 68px;
-    margin-right: 10px;
-
-    font-style: normal;
-    font-weight: 600;
     font-size: 56px;
     line-height: 68px;
-    text-align: center;
-
-    color: #173d76;
-    text-transform: uppercase;
   }
   .advantage__text {
     width: 383px;
@@ -1174,18 +1211,42 @@ a {
   .feedback__inner {
     width: 575px;
   }
-  .menu {
-    column-count: 2;
+
+  .tabs-mobile {
+    width: 75%;
   }
   .additional-education__tabs {
     flex-wrap: nowrap;
-    /* width: 65%; */
   }
   .additional-education__tab {
     width: auto;
   }
+  .advantage__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .advantage__description {
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #e7eef8;
+  }
+  .menu__item {
+    margin-right: 74px;
+  }
+  .footer__addresses {
+    width: 326px;
+  }
 }
 @media (min-width: 900px) {
+  .stocks {
+    padding: 56px 0;
+  }
+  .stocks__items {
+    width: 100%;
+    margin-left: 0;
+  }
+
   .stocks__item {
     padding: 26px 36px;
   }
@@ -1214,15 +1275,47 @@ a {
   .stocks__more {
     font-size: 24px;
     line-height: 29px;
+    margin-left: 15px;
+    margin-right: 0;
+    margin-top: 0;
   }
   .team__tab {
     font-size: 16px;
   }
   .additional-education__tab + .additional-education__tab {
     margin-top: 0;
+    margin-left: 0;
+  }
+  .stocks__text {
+    display: block;
   }
   .additional-education__tabs {
     margin: 30px 0 30px 0;
+  }
+  .heading {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .gymnasium__slogan {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .gymnasium__description {
+    padding: 32px 40px;
+    display: block;
+  }
+  .gymnasium__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .gymnasium__mark {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+  }
+  .team__content {
+    width: 95%;
   }
 }
 @media (min-width: 1280px) {
@@ -1257,6 +1350,9 @@ a {
   }
   .slider__image img {
     width: 100%;
+  }
+  .slider__text {
+    order: -1;
   }
   .slider__title {
     font-size: 58px;
@@ -1504,8 +1600,15 @@ a {
     width: 262px;
     height: 262px;
   }
-  .additional-education__tabs {
+  .tabs-mobile {
     width: 65%;
+    overflow: visible;
+  }
+  .team__tabs {
+    overflow: visible;
+  }
+  .footer__contacts {
+    margin: 0;
   }
 }
 @media (min-width: 1440px) {
