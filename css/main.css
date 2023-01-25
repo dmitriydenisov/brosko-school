@@ -1128,6 +1128,9 @@ a {
   .slider__text {
     width: 80%;
   }
+  .slider__play {
+    right: -45px;
+  }
 }
 @media (min-width: 700px) {
   .container {
