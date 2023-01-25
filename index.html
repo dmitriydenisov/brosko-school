@@ -23,15 +23,23 @@
         <div class="header__items">
           <div class="header__item">
             <a href="index.html" class="logo">
-              <img src="image/system/logo.svg" alt="" />
+              <img
+                src="image/system/logo-mobile.svg"
+                alt=""
+                class="logo__mobile"
+              />
+              <img src="image/system/logo.svg" alt="" class="logo__desktop" />
             </a>
-            <button class="btn desctop">Записаться</button>
-            <a href="tel:+74951723507" class="phone desctop"
+            <button class="btn">Записаться</button>
+            <a href="tel:+74951723507" class="phone desktop"
               >+7 495 172 35 07</a
             >
+            <a href="tel: +74951723507" class="phone-mobile">
+              <img src="image/system/phone.svg" alt="" class="phone__mobile" />
+            </a>
           </div>
           <div class="header__item">
-            <ul class="header__menu desctop">
+            <ul class="header__menu desktop">
               <li>
                 <a href="#" class="header__link header__link--active">
                   Гимназия</a
@@ -121,6 +129,9 @@
               </div>
             </div>
             <div class="slider__slide swiper-slide">
+              <div class="slider__image">
+                <img src="image/content/header-slider/slider.jpg" alt="" />
+              </div>
               <div class="slider__text">
                 <h2 class="slider__title">Brosko <span>school</span></h2>
                 <p class="slider__description">
@@ -129,13 +140,15 @@
                 </p>
                 <button class="slider__play">
                   <img src="image/system/play1.svg" alt="" />
+                  <!--prettier-ignore  -->
+                  <p class="cirle-text">• видео о школе • видео школе  </p>
                 </button>
-              </div>
-              <div class="slider__image">
-                <img src="image/content/header-slider/slider.jpg" alt="" />
               </div>
             </div>
-            <!-- <div class="slider__slide swiper-slide">
+            <div class="slider__slide swiper-slide">
+              <div class="slider__image">
+                <img src="image/content/header-slider/slider.jpg" alt="" />
+              </div>
               <div class="slider__text">
                 <h2 class="slider__title">Brosko <span>school</span></h2>
                 <p class="slider__description">
@@ -144,13 +157,15 @@
                 </p>
                 <button class="slider__play">
                   <img src="image/system/play1.svg" alt="" />
+                  <!--prettier-ignore  -->
+                  <p class="cirle-text">• видео о школе • видео школе  </p>
                 </button>
               </div>
+            </div>
+            <div class="slider__slide swiper-slide">
               <div class="slider__image">
                 <img src="image/content/header-slider/slider.jpg" alt="" />
               </div>
-            </div> -->
-            <!-- <div class="slider__slide swiper-slide">
               <div class="slider__text">
                 <h2 class="slider__title">Brosko <span>school</span></h2>
                 <p class="slider__description">
@@ -159,12 +174,11 @@
                 </p>
                 <button class="slider__play">
                   <img src="image/system/play1.svg" alt="" />
+                  <!--prettier-ignore  -->
+                  <p class="cirle-text">• видео о школе • видео школе  </p>
                 </button>
               </div>
-              <div class="slider__image">
-                <img src="image/content/header-slider/slider.jpg" alt="" />
-              </div>
-            </div> -->
+            </div>
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -207,6 +221,12 @@
                 <div class="gymnasium__mark">
                   3-й Неопалимовский пер., 13, стр. 1
                 </div>
+                <div class="mobile">
+                  <button class="btn mobile__btn">
+                    записаться на экскурстю
+                  </button>
+                  <a href="#" class="mobile__more">О гимназии</a>
+                </div>
               </div>
             </div>
             <div class="gymnasium__case">
@@ -219,6 +239,12 @@
                 </h2>
                 <p class="gymnasium__text">Билингвальный детский сад</p>
                 <div class="gymnasium__mark">Пушкарев пер., 4, стр. 1</div>
+                <div class="mobile">
+                  <button class="btn mobile__btn">
+                    записаться на экскурстю
+                  </button>
+                  <a href="#" class="mobile__more">О детском саде</a>
+                </div>
               </div>
             </div>
             <div class="gymnasium__case">
@@ -232,6 +258,12 @@
                 <p class="gymnasium__text">Билингвальный детский сад</p>
                 <div class="gymnasium__mark">
                   3-й Неопалимовский пер., 13, стр. 1
+                </div>
+                <div class="mobile">
+                  <button class="btn mobile__btn">
+                    записаться на экскурстю
+                  </button>
+                  <a href="#" class="mobile__more">О детском саде</a>
                 </div>
               </div>
             </div>
@@ -349,6 +381,11 @@
                 <!-- prettier-ignore -->
                 <div class="stocks__label">третьего
                   бесплатно!</div>
+                <img
+                  src="image/content/stocks/stock1-mobile.png"
+                  alt=""
+                  class="mobile-img"
+                />
                 <button class="stocks__btn">Конечно приведу !</button>
               </div>
               <div class="stocks__img">
@@ -360,6 +397,11 @@
                 <p class="stocks__title">Спортивная программа</p>
                 <p class="stocks__advantage">всего</p>
                 <div class="stocks__label">15 000 руб в месяц</div>
+                <img
+                  src="image/content/stocks/stock2-mobile.png"
+                  alt=""
+                  class="mobile-img"
+                />
                 <button class="btn stocks__btn">Записаться</button>
                 <a href="#" class="stocks__more">Подробнее</a>
               </div>

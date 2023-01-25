@@ -1,24 +1,27 @@
-const text = document.querySelector(".cirle-text");
-text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
-let element = document.querySelectorAll("span");
-for (let i = 0; i < element.length; i++) {
-  element[i].style.transform = "rotate(" + i * 16 + "deg)";
+const texts = document.querySelectorAll(".cirle-text");
+for (const text of texts) {
+  text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+  let element = document.querySelectorAll("span");
+  for (let i = 0; i < element.length; i++) {
+    element[i].style.transform = "rotate(" + i * 16 + "deg)";
+  }
 }
 
 const headerSlider = new Swiper(".swiper", {
   loop: true,
+
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
   },
-  // autoplay: {
-  //   delay: 2500,
-  // },
+  autoplay: {
+    delay: 2500,
+  },
 });
 
 const teamSlider = new Swiper(".team__slider", {
   slidesPerView: 1.2,
   spaceBetween: 15,
+
   pagination: {
     el: ".team__pagination",
 
