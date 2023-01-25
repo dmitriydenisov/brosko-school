@@ -910,6 +910,11 @@ a {
   width: 440px;
 }
 
+.footer__contacts--menu {
+  display: block;
+  width: 65%;
+}
+
 .footer__contact {
   position: relative;
   font-style: normal;
@@ -1523,6 +1528,10 @@ a {
   .team__content {
     width: 95%;
   }
+  .footer__contacts--menu {
+    display: flex;
+    width: auto;
+  }
 }
 @media (min-width: 1280px) {
   .container {
@@ -1592,7 +1601,7 @@ a {
     width: 558px;
   }
   .header__item + .header__item {
-    width: 827px;
+    width: 700px;
   }
   .header__menu {
     width: 100%;
