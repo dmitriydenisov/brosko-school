@@ -1118,6 +1118,11 @@ a {
     font-size: 36px;
   }
 }
+@media (min-width: 460px) {
+  .slider__title span {
+    font-size: 46px;
+  }
+}
 @media (min-width: 700px) {
   .container {
     margin: 0 auto;
