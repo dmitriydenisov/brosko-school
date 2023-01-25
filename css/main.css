@@ -1119,8 +1119,11 @@ a {
   }
 }
 @media (min-width: 460px) {
+  .slider__text {
+    width: 90%;
+  }
   .slider__title span {
-    font-size: 46px;
+    font-size: 42px;
   }
 }
 @media (min-width: 700px) {
