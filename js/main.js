@@ -49,6 +49,7 @@ document.querySelector(".header__btn").addEventListener("click", () => {
   document.querySelector(".header-menu").classList.add("active");
   document.querySelector("body").style.overflow = "hidden";
 });
+
 document.querySelector(".header__btn-exit").addEventListener("click", () => {
   document.querySelector(".header-menu").classList.remove("active");
   document.querySelector("body").style.overflowY = "auto";
@@ -56,6 +57,10 @@ document.querySelector(".header__btn-exit").addEventListener("click", () => {
 const btns = document.querySelectorAll(".btn");
 
 //Modal
+const popup = document.querySelector(".popup");
+popup.querySelector(".header__btn-exit").addEventListener("click", () => {
+  document.querySelector(".popup-wrapper").classList.remove("active");
+});
 for (let btn of btns) {
   btn.addEventListener("click", () => {
     document.querySelector(".popup-wrapper").classList.add("active");
