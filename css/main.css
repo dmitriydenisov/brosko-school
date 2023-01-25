@@ -1111,20 +1111,20 @@ a {
   }
 }
 @media (min-width: 390px) {
+  .slider__text {
+    width: 90%;
+  }
   .slider__title {
     font-size: 58px;
   }
   .slider__title span {
     font-size: 36px;
   }
-}
-@media (min-width: 460px) {
-  .slider__text {
-    width: 90%;
-  }
   .slider__title span {
     font-size: 42px;
   }
+}
+@media (min-width: 460px) {
 }
 @media (min-width: 700px) {
   .container {
