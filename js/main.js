@@ -1,7 +1,7 @@
 const texts = document.querySelectorAll(".cirle-text");
 for (const text of texts) {
   text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
-  let element = document.querySelectorAll("span");
+  let element = text.querySelectorAll("span");
   for (let i = 0; i < element.length; i++) {
     element[i].style.transform = "rotate(" + i * 16 + "deg)";
   }

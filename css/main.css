@@ -75,8 +75,7 @@ a {
   bottom: 0;
   z-index: 45;
   transition: all ease 0.5s;
-  background: url(../image/system/bg/menu-bg.svg) no-repeat right 250px center,
-    #2e5faa;
+  background: #2e5faa;
 }
 .header-menu.active {
   /* left: 0; */
@@ -87,8 +86,8 @@ a {
   display: flex;
   align-content: center;
   justify-content: space-between;
-  padding: 24px 56px;
-  margin-bottom: 160px;
+  padding: 24px 5px;
+  margin-bottom: 20px;
 }
 .btn {
   background: #31aa47;
@@ -128,7 +127,8 @@ a {
   height: 24px;
   transform: translateY(-50%);
 }
-.header-menu__address a:hover {
+.header-menu__address a:hover,
+.header-menu__address a span:hover {
   text-decoration: underline;
 }
 .header-menu__address a {
@@ -145,29 +145,33 @@ a {
   transform: translateY(-50%);
 }
 .header-menu__links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-  margin-bottom: 80px;
+  column-count: 2;
 }
 .header-menu__link {
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-
+  font-size: 18px;
+  line-height: 1;
+  display: inline-block;
   color: #ffffff;
+  margin-bottom: 25px;
 }
+
 .header-menu__address a {
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 20px;
+  line-height: 1;
 
   color: #ffffff;
   margin-bottom: 40px;
   display: inline-block;
+}
+.header-menu__address a span {
+  width: 100%;
+  font-size: 12px;
+  line-height: 1;
+  display: block;
 }
 
 .slider__title {
@@ -1385,13 +1389,52 @@ a {
   }
 }
 @media (min-width: 900px) {
+  .header-menu {
+    background: url(../image/system/bg/menu-bg.svg) no-repeat right 250px center,
+      #2e5faa;
+  }
+
+  .header-menu__top {
+    padding: 24px 56px;
+    margin-bottom: 160px;
+  }
+  .header-menu__links {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  .header-menu__address a {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .header-menu__address a span {
+    width: auto;
+    font-size: 32px;
+    line-height: 39px;
+    display: inline-block;
+  }
+
   .header__item:first-child {
     width: auto;
   }
+  .header-menu__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  .header-menu__link {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
+  }
+
   .phone-mobile {
     display: none;
   }
-  .logo__desktop {
+  .logo__desktop,
+  .desktop {
     display: block;
   }
   .logo__mobile,
