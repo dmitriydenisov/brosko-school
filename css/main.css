@@ -1149,6 +1149,11 @@ a {
     right: -45px;
   }
 }
+@media (min-width: 560px) {
+  .header-menu__link {
+    font-size: 33px;
+  }
+}
 @media (min-width: 700px) {
   .container {
     margin: 0 auto;
