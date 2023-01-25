@@ -1354,6 +1354,9 @@ a {
   }
 }
 @media (min-width: 900px) {
+  .phone-mobile {
+    display: none;
+  }
   .logo__desktop {
     display: block;
   }
