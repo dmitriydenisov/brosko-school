@@ -1124,7 +1124,10 @@ a {
     font-size: 42px;
   }
 }
-@media (min-width: 460px) {
+@media (min-width: 410px) {
+  .slider__text {
+    width: 80%;
+  }
 }
 @media (min-width: 700px) {
   .container {
