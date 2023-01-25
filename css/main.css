@@ -1095,6 +1095,12 @@ a {
   column-count: 2;
 }
 @media (min-width: 360px) {
+  .header__item:first-child {
+    width: 80%;
+  }
+  .phone__mobile {
+    margin-right: 0;
+  }
   .additional-education__items.active {
     width: 85%;
     justify-content: space-between;
@@ -1158,7 +1164,7 @@ a {
   .header__btn {
     padding: 12px;
   }
-  .logo,
+
   .header__item .btn {
     margin-right: 0;
   }
@@ -1354,6 +1360,9 @@ a {
   }
 }
 @media (min-width: 900px) {
+  .header__item:first-child {
+    width: auto;
+  }
   .phone-mobile {
     display: none;
   }
