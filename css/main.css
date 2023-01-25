@@ -1396,8 +1396,10 @@ a {
 
   .tabs-mobile {
     width: 75%;
+    overflow: visible;
   }
   .additional-education__tabs {
+    overflow: visible;
     flex-wrap: nowrap;
   }
   .additional-education__tab {
@@ -1421,6 +1423,9 @@ a {
   }
   .popup {
     width: 369px;
+  }
+  .team__tabs {
+    overflow: visible;
   }
 }
 @media (min-width: 900px) {
@@ -1881,11 +1886,11 @@ a {
     height: 262px;
   }
   .tabs-mobile {
-    width: 90%;
-    overflow: visible;
+    width: 69%;
+    /* overflow: visible; */
   }
   .team__tabs {
-    overflow: visible;
+    /* overflow: visible; */
   }
   .footer__contacts {
     margin: 0;
@@ -1927,14 +1932,12 @@ a {
     width: 90%;
     margin-top: 56px;
   }
-  .slider__image {
-    width: 1000px;
-    height: 600px;
-  }
+
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    left: 33px;
-    bottom: 188px;
+    /* left: 33px;
+    bottom: 188px; */
+    bottom: 40px;
   }
   .gymnasium__slogan {
     font-style: normal;
@@ -1989,18 +1992,18 @@ a {
     color: #173d76;
   }
   .additional-education__item {
-    width: 326px;
-    height: 326px;
+    width: 235px;
+    height: 235px;
   }
   .additional-education__item:after {
-    width: 240px;
-    height: 240px;
+    width: 155px;
+    height: 155px;
   }
   .additional-education__item:before {
     position: absolute;
     z-index: 1;
-    right: 40px;
-    top: 40px;
+    right: 4px;
+    top: 8px;
   }
   .additional-education__title {
     bottom: 32px;
@@ -2051,7 +2054,7 @@ a {
     width: 110px;
     height: 110px;
     right: -60px;
-    bottom: 0;
+    bottom: 25px;
   }
   .slider__play img {
     width: auto;
@@ -2115,6 +2118,9 @@ a {
   .footer__addresses {
     width: 326px;
   }
+  .tabs-mobile {
+    width: 92%;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -2126,7 +2132,8 @@ a {
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    left: 84px;
+    left: 92px;
+    bottom: 190px;
   }
   .stocks__items {
     width: 90%;
@@ -2156,5 +2163,25 @@ a {
   .gymnasium__text {
     font-size: 18px;
     line-height: 22px;
+  }
+  .slider__image {
+    width: 1000px;
+    height: 600px;
+  }
+  .slider__play {
+    bottom: 0;
+  }
+  .additional-education__item {
+    width: 326px;
+    height: 326px;
+  }
+  .additional-education__item:after {
+    width: 240px;
+    height: 240px;
+  }
+  .additional-education__item:before {
+    z-index: 1;
+    right: 40px;
+    top: 40px;
   }
 }
