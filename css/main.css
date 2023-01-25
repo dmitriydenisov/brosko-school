@@ -1322,6 +1322,10 @@ a {
   .additional-education__item + .additional-education__item {
     margin-left: 15px;
   }
+  .stocks__items {
+    width: 100vw;
+    margin-left: -50px;
+  }
   .stocks__item {
     width: 782px;
   }
@@ -1379,6 +1383,13 @@ a {
     width: 239px;
     height: 239px;
   }
+  .mobile-img,
+  .mobile {
+    display: none;
+  }
+  .team__content {
+    width: calc(100vw - 36px);
+  }
   .feedback__inner {
     width: 575px;
   }
@@ -1407,6 +1418,9 @@ a {
   }
   .footer__addresses {
     width: 326px;
+  }
+  .popup {
+    width: 369px;
   }
 }
 @media (min-width: 900px) {
@@ -1490,13 +1504,10 @@ a {
     font-size: 48px;
     line-height: 48px;
   }
-  .mobile-img,
-  .mobile {
-    display: none;
-  }
+
   .stocks__btn {
     padding: 14px 28px;
-    font-size: 24px;
+    font-size: 23px;
     line-height: 29px;
   }
   .stocks__more {
@@ -1551,6 +1562,7 @@ a {
   .popup {
     height: auto;
     padding: 40px 56px;
+    width: 482px;
   }
   .poup__title {
     margin-bottom: 32px;
@@ -1869,7 +1881,7 @@ a {
     height: 262px;
   }
   .tabs-mobile {
-    width: 65%;
+    width: 90%;
     overflow: visible;
   }
   .team__tabs {
@@ -1881,12 +1893,12 @@ a {
 }
 @media (min-width: 1440px) {
   .container {
-    width: 1800px;
+    width: 1300px;
   }
   .header,
   .additional-education,
   .team {
-    background: url(../image/system/bg/bg.svg) no-repeat right 56px bottom;
+    background: url(../image/system/bg/bg.svg) no-repeat right 56px bottom -205px;
   }
   .btn {
     padding: 14px 28px;
@@ -1897,8 +1909,8 @@ a {
     cursor: pointer;
   }
   .phone {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 10px;
   }
   .header__item {
     width: 558px;
@@ -1935,7 +1947,6 @@ a {
 
   .gymnasium__cases {
     justify-content: space-between;
-    flex-wrap: wrap;
     width: 95%;
   }
   .additional-education__tab {
@@ -2005,6 +2016,9 @@ a {
     margin-top: 30px;
     align-items: stretch;
   }
+  .advantage__item {
+    width: 395px;
+  }
 
   .menu__item {
     margin-right: 166px;
@@ -2043,30 +2057,17 @@ a {
     width: auto;
   }
   .gymnasium__text {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 1;
   }
   .gymnasium__description {
     padding: 32px 40px;
   }
-  .stocks__items {
-    width: 90%;
-  }
-  .stocks__item {
-    width: 782px;
-    padding: 26px 36px;
-  }
+
   .stocks__text {
     width: 50%;
   }
-  .stocks__title {
-    font-size: 64px;
-    line-height: 64px;
-  }
-  .stocks__label {
-    font-size: 48px;
-    line-height: 48px;
-  }
+
   .stocks__img img {
     width: auto;
   }
@@ -2117,8 +2118,43 @@ a {
 }
 
 @media (min-width: 1920px) {
+  .container {
+    width: 1800px;
+  }
+  .advantage__item {
+    width: 554px;
+  }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     left: 84px;
+  }
+  .stocks__items {
+    width: 90%;
+  }
+  .stocks__item {
+    width: 782px;
+    padding: 26px 36px;
+  }
+  .stocks__title {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .stocks__label {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .tabs-mobile {
+    width: 65%;
+  }
+  .phone {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .gymnasium__cases {
+    flex-wrap: wrap;
+  }
+  .gymnasium__text {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
