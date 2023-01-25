@@ -1137,6 +1137,9 @@ a {
   .slider__title span {
     font-size: 42px;
   }
+  .header-menu__link {
+    font-size: 27px;
+  }
 }
 @media (min-width: 410px) {
   .slider__text {
