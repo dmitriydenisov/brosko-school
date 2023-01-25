@@ -1110,6 +1110,14 @@ a {
     margin: 0 auto;
   }
 }
+@media (min-width: 410px) {
+  .slider__title {
+    font-size: 58px;
+  }
+  .slider__title span {
+    font-size: 36px;
+  }
+}
 @media (min-width: 700px) {
   .container {
     margin: 0 auto;
