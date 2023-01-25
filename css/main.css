@@ -1119,6 +1119,11 @@ a {
     margin: 0 auto;
   }
 }
+@media (min-width: 383px) {
+  .header-menu__link {
+    font-size: 22px;
+  }
+}
 @media (min-width: 390px) {
   .slider__text {
     width: 90%;
