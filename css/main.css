@@ -948,10 +948,23 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  content: "";
   width: 24px;
   height: 24px;
-  background-color: #173d76;
+}
+.contacts__item--map::after {
+  content: url(../image/content/contacts/map.svg);
+}
+.contacts__item--phone::after {
+  content: url(../image/content/contacts/phone.svg);
+}
+.contacts__item--wt::after {
+  content: url(../image/content/contacts/wt.svg);
+}
+.contacts__item--email::after {
+  content: url(../image/content/contacts/email.svg);
+}
+.contacts__item--vk::after {
+  content: url(../image/content/contacts/vk.svg);
 }
 .contact__logo {
   margin-bottom: 25px;
