@@ -6,43 +6,45 @@ for (const text of texts) {
     element[i].style.transform = "rotate(" + i * 16 + "deg)";
   }
 }
+if (document.querySelector(".swiper")) {
+  const headerSlider = new Swiper(".swiper", {
+    loop: true,
 
-const headerSlider = new Swiper(".swiper", {
-  loop: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  autoplay: {
-    delay: 2500,
-  },
-});
-
-const teamSlider = new Swiper(".team__slider", {
-  slidesPerView: 1.2,
-  spaceBetween: 15,
-
-  pagination: {
-    el: ".team__pagination",
-
-    clickable: true,
-  },
-  breakpoints: {
-    700: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
     },
-    1024: {
-      slidesPerView: 3,
+    autoplay: {
+      delay: 2500,
     },
-    1600: {
-      slidesPerView: 4,
+  });
+}
+if (document.querySelector(".team__slider")) {
+  const teamSlider = new Swiper(".team__slider", {
+    slidesPerView: 1.2,
+    spaceBetween: 15,
+
+    pagination: {
+      el: ".team__pagination",
+
+      clickable: true,
     },
-    1920: {
-      slidesPerView: 5,
+    breakpoints: {
+      700: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      1600: {
+        slidesPerView: 4,
+      },
+      1920: {
+        slidesPerView: 5,
+      },
     },
-  },
-});
+  });
+}
 
 //Menu
 document.querySelector(".header__btn").addEventListener("click", () => {
