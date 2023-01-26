@@ -803,6 +803,7 @@ a {
 }
 .team__item--article {
   width: 100%;
+  margin-bottom: 15px;
 }
 .team__slide,
 .team__item--article {
@@ -1925,7 +1926,6 @@ a {
   }
   .team__item--article {
     width: 326px;
-    margin-bottom: 15px;
   }
 }
 @media (min-width: 1440px) {
@@ -1972,11 +1972,8 @@ a {
     bottom: 40px;
   }
   .gymnasium__slogan {
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: #ffffff;
     width: 1235px;
   }
 
