@@ -341,7 +341,9 @@ a {
 .heading--blue {
   color: #173d76;
 }
-
+.gymnasium-section img {
+  max-width: 100%;
+}
 .gymnasium__slogan {
   font-style: normal;
   font-weight: 400;
@@ -916,6 +918,13 @@ a {
   align-items: flex-start;
   flex-wrap: wrap;
   width: 85%;
+}
+.title {
+  font-size: 24px;
+  line-height: 29px;
+  color: #173d76;
+
+  margin-bottom: 32px;
 }
 .footer__contacts {
   display: flex;
@@ -1612,6 +1621,11 @@ a {
     line-height: 15px;
     width: 205px;
   }
+  .title {
+    font-size: 56px;
+    line-height: 68px;
+    width: 65%;
+  }
 }
 @media (min-width: 1280px) {
   .container {
@@ -1975,6 +1989,9 @@ a {
     font-size: 20px;
     line-height: 30px;
     width: 1235px;
+  }
+  .gymnasium__slogan--width {
+    width: 895px;
   }
 
   .gymnasium__cases {
