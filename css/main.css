@@ -2463,6 +2463,7 @@ a {
     background: #e7eef8;
     display: flex;
     justify-content: space-between;
+    height: auto;
     /* blue */
 
     /* border: 4px solid #2e5faa;
