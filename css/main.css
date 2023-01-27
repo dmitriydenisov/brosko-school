@@ -1230,6 +1230,7 @@ a {
   height: 100%;
 }
 .popup-team__body {
+  overflow-y: auto;
   position: absolute;
   width: 320px;
   background: #e7eef8;
