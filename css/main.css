@@ -38,7 +38,7 @@ a {
 .header {
   position: relative;
   padding-top: 25px;
-  padding-bottom: 56px;
+  padding-bottom: 20px;
 }
 .header__items,
 .header__item {
@@ -354,6 +354,10 @@ a {
 }
 .gymnasium__slogan--article {
   color: #173d76;
+}
+.gymnasium__slogan--article:last-of-type {
+  padding-bottom: 24px;
+  border-bottom: 2px solid #9ba8ba;
 }
 .gymnasium__slogan--article span {
   font-weight: 700;
@@ -683,6 +687,9 @@ a {
   color: #ffffff;
   margin: 0 auto;
 }
+.stocks__btn--mobile {
+  margin: 16px 0;
+}
 .stocks__more {
   margin-left: auto;
   margin-right: auto;
@@ -929,6 +936,13 @@ a {
   color: #173d76;
 
   margin-bottom: 32px;
+}
+.title a {
+  font-size: 16px;
+  line-height: 20px;
+}
+.title a span img {
+  width: 24px;
 }
 .contacts__item {
   padding-left: 40px;
@@ -1514,6 +1528,10 @@ a {
   }
 }
 @media (min-width: 900px) {
+  .header {
+    padding-bottom: 56px;
+  }
+
   .header-menu {
     background: url(../image/system/bg/menu-bg.svg) no-repeat right 250px center,
       #2e5faa;
@@ -1685,6 +1703,14 @@ a {
     line-height: 68px;
     /* width: 65%; */
     white-space: pre-line;
+  }
+  .title a {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .title a span img {
+    width: auto;
+    max-width: 100%;
   }
   .contacts__item {
     font-size: 24px;
