@@ -68,9 +68,6 @@ for (let btn of btns) {
     document.querySelector(".popup-wrapper").classList.add("active");
   });
 }
-if (document.querySelector(".popup-wrapper").classList.contains("active")) {
-  console.log("done");
-}
 window.addEventListener("click", (e) => {
   if (e.target === document.querySelector(".popup-wrapper")) {
     document.querySelector(".popup-wrapper").classList.remove("active");
@@ -89,12 +86,26 @@ popupTeam
   .querySelector(".popup-team__btn-exit")
   .addEventListener("click", () => {
     document.querySelector(".popup-team").classList.remove("active");
+    document.querySelector("body").style.overflowY = "auto";
   });
 for (const item of items) {
   item.addEventListener("click", () => {
     document.querySelector(".popup-team").classList.add("active");
+    document.querySelector("body").style.overflow = "hidden";
   });
 }
+window.addEventListener("click", (e) => {
+  if (e.target === document.querySelector(".wrapper")) {
+    document.querySelector(".popup-team").classList.remove("active");
+    document.querySelector("body").style.overflowY = "auto";
+  }
+});
+window.addEventListener("keydown", (e) => {
+  if (e.keyCode === 27) {
+    document.querySelector(".popup-team").classList.remove("active");
+    document.querySelector("body").style.overflowY = "auto";
+  }
+});
 
 const tabs = document.querySelectorAll(".additional-education__tab");
 

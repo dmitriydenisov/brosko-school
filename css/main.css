@@ -1810,6 +1810,12 @@ a {
     font-size: 24px;
     line-height: 29px;
   }
+  .popup-team__body {
+    width: 853px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
 }
 @media (min-width: 1280px) {
   .container {
@@ -2139,6 +2145,18 @@ a {
     width: 598px;
     height: auto;
   }
+  .popup-team__body {
+    width: 1220px;
+  }
+}
+@media (min-width: 1400px) {
+  .popup-team__img {
+    width: 150px;
+    height: 150px;
+  }
+  .popup-team__description {
+    width: 985px;
+  }
 }
 @media (min-width: 1440px) {
   .container {
@@ -2440,55 +2458,18 @@ a {
   .popup-team {
     display: none;
   }
-  /* .popup-team.active {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
-  .wrapper {
-    /* order: 0;
-    opacity: 0.8;
-    background: #e7eef8;
-    width: 100%;
-    height: 100%; */
-  }
   .popup-team__body {
-    /* position: absolute; */
     width: 1300px;
     background: #e7eef8;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     height: auto;
-    /* blue */
-
-    /* border: 4px solid #2e5faa;
-    border-radius: 8px;
-
-    color: #173d76; */
     padding: 50px 50px;
-  }
-  .popup-team__btn-exit {
-    /* position: absolute;
-    top: 24px;
-    right: 24px; */
-  }
-  .popup-team__img {
-    /* border-radius: 50%;
-    width: 262px;
-    height: 262px;
-    overflow: hidden;
-    flex-shrink: 0; */
   }
   .popup-team__description {
     width: 900px;
   }
   .popup-team__title {
-    /* font-weight: 800; */
     font-size: 32px;
     line-height: 39px;
   }
@@ -2500,35 +2481,6 @@ a {
     margin-top: 25px;
   }
   .place-post__place {
-    /* font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height 
-
-    color: #ffffff;
-    background: #2e5faa;
-    border-radius: 30px;
-    padding: 8px 25px; */
     width: auto;
-  }
-  .place-post__post {
-    /* font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px; */
-  }
-  .place-post__label {
-    /* font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px; */
-  }
-  .place-post__text {
-    /* font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    margin: 0; */
   }
 }
