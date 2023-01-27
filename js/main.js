@@ -82,6 +82,20 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
+//Modal team
+const items = document.querySelectorAll(".team__item--article");
+const popupTeam = document.querySelector(".popup-team"); //
+popupTeam
+  .querySelector(".popup-team__btn-exit")
+  .addEventListener("click", () => {
+    document.querySelector(".popup-team").classList.remove("active");
+  });
+for (const item of items) {
+  item.addEventListener("click", () => {
+    document.querySelector(".popup-team").classList.add("active");
+  });
+}
+
 const tabs = document.querySelectorAll(".additional-education__tab");
 
 tabs.forEach(function (item, i) {
