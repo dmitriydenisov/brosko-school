@@ -315,7 +315,7 @@ a {
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   width: auto;
   left: 5px;
-  bottom: 29px;
+  bottom: 4px;
 }
 
 .social {
@@ -1448,7 +1448,7 @@ a {
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     left: 177px;
-    bottom: 39px;
+    /* bottom: 39px; */
   }
   .slider__title {
     font-size: 104px;
@@ -1469,15 +1469,6 @@ a {
 
   .slider__description::after {
     width: 2px;
-  }
-  .social {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 122px;
-    /* flex-direction: column; */
   }
 
   .gymnasium__case {
@@ -1688,8 +1679,17 @@ a {
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    left: 175px;
+    left: 112px;
     bottom: 38px;
+  }
+  .social {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 122px;
+    /* flex-direction: column; */
   }
   .stocks__advantage {
     font-size: 32px;
