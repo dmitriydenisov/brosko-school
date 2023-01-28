@@ -81,31 +81,33 @@ window.addEventListener("keydown", (e) => {
 
 //Modal team
 const items = document.querySelectorAll(".team__item--article");
-const popupTeam = document.querySelector(".popup-team"); //
-popupTeam
-  .querySelector(".popup-team__btn-exit")
-  .addEventListener("click", () => {
-    document.querySelector(".popup-team").classList.remove("active");
-    document.querySelector("body").style.overflowY = "auto";
+const popupTeam = document.querySelector(".popup-team");
+if (popupTeam) {
+  popupTeam
+    .querySelector(".popup-team__btn-exit")
+    .addEventListener("click", () => {
+      document.querySelector(".popup-team").classList.remove("active");
+      document.querySelector("body").style.overflowY = "auto";
+    });
+  for (const item of items) {
+    item.addEventListener("click", () => {
+      document.querySelector(".popup-team").classList.add("active");
+      document.querySelector("body").style.overflow = "hidden";
+    });
+  }
+  window.addEventListener("click", (e) => {
+    if (e.target === document.querySelector(".wrapper")) {
+      document.querySelector(".popup-team").classList.remove("active");
+      document.querySelector("body").style.overflowY = "auto";
+    }
   });
-for (const item of items) {
-  item.addEventListener("click", () => {
-    document.querySelector(".popup-team").classList.add("active");
-    document.querySelector("body").style.overflow = "hidden";
+  window.addEventListener("keydown", (e) => {
+    if (e.keyCode === 27) {
+      document.querySelector(".popup-team").classList.remove("active");
+      document.querySelector("body").style.overflowY = "auto";
+    }
   });
 }
-window.addEventListener("click", (e) => {
-  if (e.target === document.querySelector(".wrapper")) {
-    document.querySelector(".popup-team").classList.remove("active");
-    document.querySelector("body").style.overflowY = "auto";
-  }
-});
-window.addEventListener("keydown", (e) => {
-  if (e.keyCode === 27) {
-    document.querySelector(".popup-team").classList.remove("active");
-    document.querySelector("body").style.overflowY = "auto";
-  }
-});
 
 const tabs = document.querySelectorAll(".additional-education__tab");
 
