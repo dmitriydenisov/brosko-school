@@ -130,7 +130,42 @@
                 <!--prettier-ignore  -->
                 <p class="cirle-text">• видео о школе • видео школе  </p>
               </button>
+              <div class="popup mobile">
+                <h2 class="poup__title">Записать ребенка</h2>
+                <p class="popup__subtitle">
+                  Заполните данные и с вами свяжется наш менеджер
+                </p>
+                <form class="poup__form">
+                  <input
+                    type="text"
+                    class="popup__input"
+                    placeholder="Ваше имя*"
+                  /><input
+                    type="text"
+                    class="popup__input"
+                    placeholder="Телефон*"
+                  /><input
+                    type="text"
+                    class="popup__input"
+                    placeholder="E-mail"
+                  />
+
+                  <div class="popup__label">*Обязательные поля</div>
+                  <div class="test">
+                    <input type="submit" class="popup__btn" value="Записать" />
+                    <div class="popup__approval">
+                      Нажимая кнопку вы даете согласие на обработку персональных
+                      данных
+                    </div>
+                  </div>
+                </form>
+              </div>
               <h2 class="title">О гимназии</h2>
+              <img
+                src="image/content/mobile-header.jpg"
+                alt=""
+                class="mobile-img"
+              />
               <div class="description">
                 это уникальная возможность получения качественного
                 академического образования и всестороннего развития свободной
@@ -143,7 +178,7 @@
                 родителей.
               </div>
             </div>
-            <div class="header__form">
+            <div class="header__form desktop">
               <div class="popup">
                 <h2 class="poup__title">Записать ребенка</h2>
                 <p class="popup__subtitle">
@@ -188,44 +223,54 @@
               <div class="differences__img">
                 <img src="image/content/differences/education.svg" alt="" />
               </div>
-              <div class="differences__head">Высокое качество образования</div>
-              <div class="differences__text">
-                Высокопрофессиональный педагогический коллектив гарантирует
-                высокое качество образования, соответствующее современным
-                мировым стандартам
+              <div class="differences__desc">
+                <div class="differences__head">
+                  Высокое качество образования
+                </div>
+                <div class="differences__text">
+                  Высокопрофессиональный педагогический коллектив гарантирует
+                  высокое качество образования, соответствующее современным
+                  мировым стандартам
+                </div>
               </div>
             </div>
             <div class="differences__item">
               <div class="differences__img">
                 <img src="image/content/differences/proff.svg" alt="" />
               </div>
-              <div class="differences__head">
-                Профессиональные педагоги и тьюторы
-              </div>
-              <div class="differences__text">
-                Классы с максимальной наполняемостью до 15 человек обеспечивают
-                индивидуальный подход к каждому воспитаннику
+              <div class="differences__desc">
+                <div class="differences__head">
+                  Профессиональные педагоги и тьюторы
+                </div>
+                <div class="differences__text">
+                  Классы с максимальной наполняемостью до 15 человек
+                  обеспечивают индивидуальный подход к каждому воспитаннику
+                </div>
               </div>
             </div>
             <div class="differences__item">
               <div class="differences__img">
                 <img src="image/content/differences/nutrition.svg" alt="" />
               </div>
-              <div class="differences__head">Полноценное питание</div>
-              <div class="differences__text">
-                Дети обеспечены сбалансированным 5-ти разовым питанием
+              <div class="differences__desc">
+                <div class="differences__head">Полноценное питание</div>
+                <div class="differences__text">
+                  Дети обеспечены сбалансированным 5-ти разовым питанием
+                </div>
               </div>
             </div>
             <div class="differences__item">
               <div class="differences__img">
                 <img src="image/content/differences/secure.svg" alt="" />
               </div>
-              <div class="differences__head">
-                Безопасная среда на охраняемой территории
-              </div>
-              <div class="differences__text">
-                Школа имеет собственную прекрасно оборудованную и охраняемую
-                экоплощадку
+              <div class="differences__desc">
+                <div class="differences__head">
+                  Безопасная среда на охраняемой территории
+                </div>
+                <div class="differences__text">
+                  Школа имеет собственную прекрасно оборудованную и охраняемую
+                  экоплощадку
+                </div>
               </div>
             </div>
           </div>
@@ -517,7 +562,7 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <section class="team desktop">
         <div class="container">
           <h2 class="heading heading--blue">Отзывы</h2>
           <div class="team__content">
