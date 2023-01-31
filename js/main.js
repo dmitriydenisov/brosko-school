@@ -45,6 +45,33 @@ if (document.querySelector(".team__slider")) {
     },
   });
 }
+if (document.querySelector(".reviews__slider")) {
+  const teamSlider = new Swiper(".reviews__slider", {
+    slidesPerView: 1.2,
+    spaceBetween: 15,
+
+    pagination: {
+      el: ".reviews__pagination",
+
+      clickable: true,
+    },
+    breakpoints: {
+      700: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      1600: {
+        slidesPerView: 4,
+      },
+      1920: {
+        slidesPerView: 3,
+      },
+    },
+  });
+}
 
 //Menu
 document.querySelector(".header__btn").addEventListener("click", () => {
@@ -59,10 +86,15 @@ document.querySelector(".header__btn-exit").addEventListener("click", () => {
 const btns = document.querySelectorAll(".btn");
 
 //Modal
-const popup = document.querySelector(".popup");
-popup.querySelector(".header__btn-exit").addEventListener("click", () => {
-  document.querySelector(".popup-wrapper").classList.remove("active");
-});
+const popups = document.querySelectorAll(".popup");
+for (const popup of popups) {
+  if (popup.querySelector(".header__btn-exit")) {
+    popup.querySelector(".header__btn-exit").addEventListener("click", () => {
+      document.querySelector(".popup-wrapper").classList.remove("active");
+    });
+  }
+}
+
 for (let btn of btns) {
   btn.addEventListener("click", () => {
     document.querySelector(".popup-wrapper").classList.add("active");
@@ -143,5 +175,20 @@ teamTabs.forEach(function (item, i) {
       content.classList.remove("team__wrapper--active");
     }
     tabContentTeam.classList.add("team__wrapper--active");
+  });
+});
+
+//faq
+document.querySelectorAll(".faq__question").forEach((item) => {
+  item.addEventListener("click", () => {
+    const parent = item.parentNode;
+    if (parent.classList.contains("active")) {
+      parent.classList.remove("active");
+    } else {
+      document
+        .querySelectorAll(".faq__item")
+        .forEach((child) => child.classList.remove("active"));
+      parent.classList.toggle("active");
+    }
   });
 });
