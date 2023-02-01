@@ -1831,6 +1831,10 @@ a {
   .team__tabs {
     overflow: visible;
   }
+  .stay__title span {
+    display: inline-block;
+    width: auto;
+  }
 }
 @media (min-width: 900px) {
   .header {
@@ -2065,10 +2069,6 @@ a {
   }
   .hide {
     display: block;
-  }
-  .stay__title span {
-    display: inline-block;
-    width: auto;
   }
 }
 @media (min-width: 1280px) {
