@@ -501,16 +501,7 @@ a {
   padding: 56px 0;
 }
 .additional-education__desc {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  /* or 160% */
-
-  /* dark blue */
-
-  color: #173d76;
-  width: 45%;
+  display: none;
 }
 .tabs-mobile {
   width: calc(100vw - 15px);
@@ -2598,6 +2589,19 @@ a {
   .stay__item {
     margin-bottom: 0;
   }
+  .additional-education__desc {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* or 160% */
+
+    /* dark blue */
+
+    color: #173d76;
+    width: 45%;
+  }
   /* .gallery__items {
     display: flex;
     margin: 32px 0;
@@ -3059,5 +3063,9 @@ a {
   .stay__time {
     font-size: 16px;
     line-height: 20px;
+  }
+  .additional-education__desc {
+    font-size: 20px;
+    line-height: 32px;
   }
 }
