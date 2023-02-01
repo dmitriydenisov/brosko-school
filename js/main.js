@@ -192,3 +192,18 @@ document.querySelectorAll(".faq__question").forEach((item) => {
     }
   });
 });
+
+//show more
+const shows = document.querySelectorAll(".show");
+const stayItems = document.querySelectorAll(".stay__item");
+for (const stayItem of stayItems) {
+  for (const show of shows) {
+    show.addEventListener("click", function () {
+      const hides = this.stayItem.querySelectorAll(".hide");
+      for (const hide of hides) {
+        hide.classList.add("active");
+      }
+      document.querySelector(".show").classList.add("active");
+    });
+  }
+}
