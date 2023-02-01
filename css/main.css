@@ -2570,6 +2570,9 @@ a {
   .diagnostics .feedback__approval {
     display: inline-block;
   }
+  .btns .feedback__approval {
+    margin-top: 0;
+  }
 }
 @media (min-width: 1400px) {
   .popup-team__img {
