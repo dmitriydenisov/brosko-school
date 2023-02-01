@@ -66,6 +66,7 @@ a {
   background: #173d76;
 }
 .is-kindergarten .header__content {
+  padding: 32px 0;
   background: #065f16;
 }
 .header__items,
