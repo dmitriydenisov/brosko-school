@@ -194,12 +194,12 @@ document.querySelectorAll(".faq__question").forEach((item) => {
 });
 
 //show more
-const shows = document.querySelectorAll(".show");
-const stayItems = document.querySelectorAll(".stay__item");
+const shows = document.querySelectorAll(".show"); //керпка которая открыватет скрытые элементы
+const stayItems = document.querySelectorAll(".stay__item"); // родительский блок
 for (const stayItem of stayItems) {
   for (const show of shows) {
     show.addEventListener("click", function () {
-      const hides = this.stayItem.querySelectorAll(".hide");
+      const hides = stayItem.querySelectorAll(".hide"); //скрытые элементы
       for (const hide of hides) {
         hide.classList.add("active");
       }
