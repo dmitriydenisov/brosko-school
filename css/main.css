@@ -45,9 +45,6 @@ a {
   font-weight: 800;
   font-size: 56px;
   line-height: 68px;
-
-  /* grey blue */
-
   color: #e7eef8;
 }
 .description {
@@ -55,9 +52,6 @@ a {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-
-  /* grey blue */
-
   color: #e7eef8;
 }
 .is-gymnasium .header,
@@ -85,9 +79,6 @@ a {
 .phone__mobile {
   margin-right: 20px;
 }
-/* {
-  margin-right: 20px;
-} */
 .header__items {
   margin-bottom: 15px;
 }
@@ -102,7 +93,6 @@ a {
 }
 .header-menu {
   width: 100%;
-  /* margin-right: -100%; */
   position: fixed;
   top: 0;
   right: -100%;
@@ -112,8 +102,6 @@ a {
   background: #2e5faa;
 }
 .header-menu.active {
-  /* left: 0; */
-  /* margin-right: 0; */
   right: 0;
 }
 .header-menu__top {
@@ -256,7 +244,6 @@ a {
   height: 90px;
   right: 29px;
   top: -45%;
-  /* bottom: 15px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,9 +271,6 @@ a {
   text-transform: uppercase;
   display: inline-block;
   transform-origin: 0 44px;
-}
-.slider__image {
-  /* display: none; */
 }
 .slider__image {
   height: 250px;
@@ -357,11 +341,7 @@ a {
   display: none;
 }
 
-.social__link + .social__link {
-  /* margin-left: 35px; */
-  /* margin-top: 35px; */
-}
-.gymnasiumб,
+.gymnasium,
 .stay {
   background-color: #2e5faa;
   padding: 56px 0;
@@ -488,9 +468,6 @@ a {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-
-  /* blue */
-
   color: #2e5faa;
   width: 100%;
   margin: 0 auto;
@@ -513,8 +490,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* width: 75%; */
-  /* flex-wrap: wrap; */
   margin: 30px auto;
   overflow-x: auto;
 }
@@ -572,9 +547,6 @@ a {
 .additional-education__item:nth-child(even) {
   margin-left: 10px;
 }
-/* .additional-education__item + .additional-education__item {
-  margin-left: 16px;
-} */
 .additional-education__item:after {
   position: absolute;
   content: "";
@@ -660,7 +632,6 @@ a {
 .friends {
   background: #173d76;
   color: #e7eef8;
-  /* margin-bottom: 20px; */
 }
 .sports {
   background: #fed059;
@@ -772,9 +743,7 @@ a {
   color: #173d76;
   text-transform: uppercase;
 }
-/* .advantage__text {
-  width: 383px;
-} */
+
 .advantage__title {
   font-style: normal;
   font-weight: 600;
@@ -988,8 +957,6 @@ a {
 
   font-weight: 600;
 
-  /* dark blue */
-
   color: #173d76;
   position: relative;
 }
@@ -1129,7 +1096,6 @@ a {
   border: 4px solid #ffffff;
   box-shadow: 0px 0px 50px -15px #173d76;
   border-radius: 8px;
-  /* width: 600px; */
   margin: 0 auto;
   padding: 5px 15px;
 }
@@ -1271,9 +1237,6 @@ a {
   width: 320px;
   background: #e7eef8;
   height: 90vh;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* blue */
 
   border: 4px solid #2e5faa;
   border-radius: 8px;
@@ -1296,9 +1259,6 @@ a {
 .popup-team__img img {
   width: 100%;
 }
-.popup-team__description {
-  /* width: 900px; */
-}
 .popup-team__title {
   font-weight: 800;
   font-size: 24px;
@@ -1312,7 +1272,6 @@ a {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  /* identical to box height */
   width: 135px;
 
   color: #ffffff;
@@ -1358,7 +1317,6 @@ a {
   margin: 0 auto;
   margin-bottom: 15px;
   width: 290px;
-  /* height: 292px; */
   background-color: blue;
   overflow: hidden;
 }
@@ -1371,12 +1329,10 @@ a {
   padding: 56px 0;
 }
 .faq__items {
-  /* column-count: 2; */
   margin-top: 30px;
 }
 .faq__item {
   width: 100%;
-  /* width: 590px; */
   background: #e7eef8;
   border-radius: 8px;
   color: #173d76;
@@ -1429,7 +1385,6 @@ a {
 .header__text .title,
 .header__text .description {
   color: #e7eef8;
-  /* width: 630px; */
 }
 .header__text .popup {
   height: auto;
@@ -1476,9 +1431,6 @@ a {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  /* margin: 24px 0; */
-
-  /* grey blue */
 
   color: #e7eef8;
 }
@@ -1487,8 +1439,6 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-
-  /* grey blue */
 
   color: #e7eef8;
 }
@@ -1531,9 +1481,6 @@ a {
   font-weight: 600;
   font-size: 32px;
   line-height: 39px;
-
-  /* dark blue */
-
   color: #173d76;
   margin-bottom: 32px;
 }
@@ -1545,7 +1492,6 @@ a {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  /* text-align: right; */
   color: #fff;
 }
 .stay__times {
@@ -1555,9 +1501,6 @@ a {
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
-  /* identical to box height */
-
-  /* dark blue */
 
   color: #173d76;
   margin-bottom: 15px;
@@ -1577,8 +1520,6 @@ a {
   font-size: 14px;
   line-height: 17px;
   text-decoration-line: underline;
-
-  /* dark blue */
 
   color: #173d76;
   margin-bottom: 15px;
@@ -1696,18 +1637,11 @@ a {
     padding: 12px;
   }
 
-  /* .header__item .btn {
-    margin-right: 0;
-  } */
   .slider {
     width: 90%;
     margin-top: 56px;
     margin-left: 0;
   }
-
-  /* .slider__image{
-    height: 250px;
-  } */
 
   .slider__image {
     overflow: hidden;
@@ -1732,7 +1666,6 @@ a {
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     left: 177px;
-    /* bottom: 39px; */
   }
   .slider__title {
     font-size: 104px;
@@ -1973,7 +1906,6 @@ a {
     align-items: center;
     justify-content: space-between;
     width: 122px;
-    /* flex-direction: column; */
   }
   .stocks__advantage {
     font-size: 32px;
@@ -2079,7 +2011,6 @@ a {
   .title {
     font-size: 56px;
     line-height: 68px;
-    /* width: 65%; */
     white-space: pre-line;
   }
   .header__text .logo {
@@ -2093,7 +2024,6 @@ a {
     white-space: pre-line;
   }
   .header__text .slider__play {
-    /* position: static; */
     margin-top: 35px;
     margin-bottom: 75px;
     width: 110px;
@@ -2432,11 +2362,8 @@ a {
   }
   .tabs-mobile {
     width: 69%;
-    /* overflow: visible; */
   }
-  .team__tabs {
-    /* overflow: visible; */
-  }
+
   .footer__contacts {
     margin: 0;
   }
@@ -2539,22 +2466,6 @@ a {
     line-height: 19px;
   }
 
-  /* .differences__head {
-    font-style: normal;
-    font-weight: 600;
-  
-    margin: 24px 0;
-
-    /* grey blue 
-
-    color: #e7eef8;
-  }
-    font-style: normal;
-    font-weight: 400;
-
-    /* grey blue 
-
-    color: #e7eef8;*/
   .principles .heading {
     margin-bottom: 0;
   }
@@ -2595,83 +2506,10 @@ a {
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
-    /* or 160% */
-
-    /* dark blue */
 
     color: #173d76;
     width: 45%;
   }
-  /* .gallery__items {
-    display: flex;
-    margin: 32px 0;
-    justify-content: space-between;
-  }
-  .gallery__item {
-    width: 290px;
-    /* height: 292px; 
-    background-color: blue;
-    overflow: hidden;
-  }
-  .gallery__item img {
-    width: 100%;
-    height: 100%;
-  } */
-  /* .faq {
-    background: #6287bf;
-    padding: 56px 0;
-  }
-  .faq__items {
-    column-count: 2;
-    margin-top: 30px;
-  }
-  .faq__item {
-    width: 590px;
-    background: #e7eef8;
-    border-radius: 8px;
-    color: #173d76;
-    margin-bottom: 15px;
-  }
-  .faq__question {
-    padding: 25px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    position: relative;
-  }
-  .faq__question::after {
-    position: absolute;
-    content: url(../image/system/plus.svg);
-    right: 25px;
-    top: 25px;
-    width: 30px;
-    height: 30px;
-  }
-  .faq__text {
-    width: 90%;
-  }
-  .faq__answer {
-    display: none;
-  }
-  .faq__item.active .faq__question::after {
-    content: url(../image/system/minus.svg);
-  }
-    position: relative;
-    display: block;
-    padding: 25px;
-    font-family: "SF Pro Display";
-    font-style: normal;
-    font-weight: 400;
-  .faq__item.active .faq__answer::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #2e5faa;
-  } */
 }
 @media (min-width: 1400px) {
   .popup-team__img {
@@ -2724,8 +2562,6 @@ a {
 
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    /* left: 33px;
-    bottom: 188px; */
     bottom: 40px;
   }
   .gymnasium__slogan {
@@ -2993,8 +2829,6 @@ a {
   .popup-team__body {
     width: 1300px;
     background: #e7eef8;
-    /* display: flex;
-    justify-content: space-between; */
     height: auto;
     padding: 50px 50px;
   }
