@@ -2427,16 +2427,18 @@ a {
   }
 
   .is-gymnasium .header__content {
-    background: url("../image/system/bg/gymnasium.png"), #173d76;
-    background-position: top center;
+    background: url("../image/system/bg/bg.svg") no-repeat right 56px bottom 0,
+      url("../image/system/bg/gymnasium.png") top center, #173d76;
+    /* background-position: top center; */
     background-repeat: no-repeat;
-    background-size: contain;
+    /* background-size: contain; */
   }
   .is-kindergarten .header__content {
-    background: url("../image/system/bg/kindergarten.png"), #065f16;
-    background-position: top center;
+    background: url("../image/system/bg/bg.svg") no-repeat right 56px bottom 0,
+      url("../image/system/bg/kindergarten.png") top center, #065f16;
+    /* background-position: ; */
     background-repeat: no-repeat;
-    background-size: contain;
+    /* background-size: contain; */
   }
   .header__inner {
     width: 892px;
@@ -2592,7 +2594,9 @@ a {
   }
   .is-home .header,
   .is-home .additional-education,
-  .is-home .team {
+  .is-home .team,
+  .is-kindergarten .team,
+  .is-gymnasium .team {
     background: url(../image/system/bg/bg.svg) no-repeat right 56px bottom -205px;
   }
   .btn {
