@@ -500,6 +500,18 @@ a {
 .additional-education {
   padding: 56px 0;
 }
+.additional-education__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  /* or 160% */
+
+  /* dark blue */
+
+  color: #173d76;
+  width: 45%;
+}
 .tabs-mobile {
   width: calc(100vw - 15px);
   overflow: hidden;
@@ -2462,8 +2474,15 @@ a {
   .popup-team__body {
     width: 1220px;
   }
+
   .is-gymnasium .header__content {
-    background: url("../image/system/bg/test.png"), #173d76;
+    background: url("../image/system/bg/gymnasium.png"), #173d76;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .is-kindergarten .header__content {
+    background: url("../image/system/bg/kindergarten.png"), #065f16;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;

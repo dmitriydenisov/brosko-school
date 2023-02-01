@@ -197,13 +197,11 @@ document.querySelectorAll(".faq__question").forEach((item) => {
 const shows = document.querySelectorAll(".show"); //керпка которая открыватет скрытые элементы
 const stayItems = document.querySelectorAll(".stay__item"); // родительский блок
 for (const stayItem of stayItems) {
-  for (const show of shows) {
-    show.addEventListener("click", function () {
-      const hides = stayItem.querySelectorAll(".hide"); //скрытые элементы
-      for (const hide of hides) {
-        hide.classList.add("active");
-      }
-      document.querySelector(".show").classList.add("active");
-    });
-  }
+  stayItem.querySelector(".show").addEventListener("click", () => {
+    const hides = stayItem.querySelectorAll(".hide"); //скрытые элементы
+    for (const hide of hides) {
+      hide.classList.add("active");
+    }
+    stayItem.querySelector(".show").classList.add("active");
+  });
 }
