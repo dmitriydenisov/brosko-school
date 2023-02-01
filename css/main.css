@@ -1530,6 +1530,32 @@ a {
 .active.show {
   display: none;
 }
+.diagnostics {
+  padding: 32px 0;
+  background: #173d76;
+
+  color: #e7eef8;
+}
+.diagnostics__title {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 800;
+}
+.diagnostics__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+.diagnostics .feedback__form input[type="text"] {
+  background-color: #2e5faa;
+}
+.diagnostics .feedback__form input[type="submit"] {
+  width: 250px;
+}
+.diagnostics .feedback__approval {
+  display: block;
+}
+
 @media (min-width: 360px) {
   .header__item:first-child {
     width: 80%;
@@ -2517,6 +2543,33 @@ a {
     color: #173d76;
     width: 45%;
   }
+
+  .diagnostics__inner {
+    display: flex;
+  }
+  .diagnostics__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 37px;
+    line-height: 47px;
+
+    width: 64%;
+  }
+  .diagnostics__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    width: 80%;
+  }
+  .diagnostics .feedback__form input[type="text"] {
+    background-color: #2e5faa;
+  }
+  .diagnostics .feedback__form input[type="submit"] {
+    width: 250px;
+  }
+  .diagnostics .feedback__approval {
+    display: inline-block;
+  }
 }
 @media (min-width: 1400px) {
   .popup-team__img {
@@ -2908,5 +2961,19 @@ a {
   .additional-education__desc {
     font-size: 20px;
     line-height: 32px;
+  }
+  .diagnostics__title {
+    font-size: 56px;
+    line-height: 68px;
+  }
+  .diagnostics .feedback__form {
+    width: 554px;
+  }
+  .diagnostics__inner {
+    width: 90%;
+  }
+  .btns {
+    display: flex;
+    justify-content: space-between;
   }
 }
