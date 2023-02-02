@@ -276,14 +276,7 @@ a {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+
 .cirle-text span {
   position: absolute;
   top: -43px;
@@ -3086,5 +3079,13 @@ a {
   }
   .header__items .social {
     bottom: 23%;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
