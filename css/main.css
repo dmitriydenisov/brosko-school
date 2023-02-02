@@ -1216,10 +1216,7 @@ a {
   margin-right: 5px;
   cursor: pointer;
 }
-.btns {
-  display: flex;
-  justify-content: space-between;
-}
+
 .popup__approval {
   font-style: normal;
   font-weight: 400;
@@ -1993,6 +1990,15 @@ a {
     font-size: 64px;
     line-height: 64px;
   }
+  .btns {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bread {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     left: 112px;
@@ -2163,7 +2169,7 @@ a {
     display: block;
   }
   .gymnasium-section .stocks__item {
-    width: auto;
+    width: 782px;
     margin-left: 0;
   }
 }
@@ -2875,9 +2881,7 @@ a {
   .footer__contacts--menu {
     width: 60%;
   }
-  .feedback {
-    background-size: auto;
-  }
+
   .menu__item {
     margin-right: 75px;
   }
@@ -3061,6 +3065,9 @@ a {
   }
   .header__items .social {
     bottom: 23%;
+  }
+  .feedback {
+    background-size: auto;
   }
 }
 @keyframes rotation {
