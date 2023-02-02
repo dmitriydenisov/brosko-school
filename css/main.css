@@ -2249,8 +2249,8 @@ a {
     width: 50px;
     height: 50px;
     right: -156px;
-    bottom: -20px;
-    box-shadow: 10px 14px 24px rgba(0, 0, 0, 0.25);
+    bottom: -1px;
+    box-shadow: 10px 9px 24px rgba(0, 0, 0, 0.25);
   }
 
   .slider__play img {
@@ -2345,32 +2345,6 @@ a {
     width: 100px;
     height: 100px;
   }
-  /* .additional-education__item--log:before {
-    /* content: url(../image/content/additional/log.svg); 
-    width: 100px;
-    height: 100px;
-  }
-  .additional-education__item--british:before {
-    content: url(../image/content/additional/brit.svg);
-    width: 78px;
-    height: 100px;
-  }
-  .additional-education__item--psi:before {
-    content: url(../image/content/additional/psi.svg);
-    width: 100px;
-    height: 100px;
-  }
-  .additional-education__item--sport:before {
-    content: url(../image/content/additional/sport1.svg);
-    width: 100px;
-    height: 100px;
-  }
-  .additional-education__item--sport
-    + .additional-education__item--sport:before {
-    content: url(../image/content/additional/sport2.svg);
-    width: 100px;
-    height: 100px;
-  } */
   .additional-education__title {
     left: 14px;
     bottom: 13px;
@@ -2551,10 +2525,10 @@ a {
     height: 110px;
     margin-bottom: 35px;
   }
-  .slider__play img {
+  .header__text .slider__play img {
     width: auto;
   }
-  .cirle-text span {
+  .header__text .cirle-text span {
     top: -53px;
     transform-origin: 0 53px;
   }
@@ -2844,6 +2818,14 @@ a {
     height: 110px;
     right: -60px;
     bottom: 25px;
+    box-shadow: 10px 14px 24px rgba(0, 0, 0, 0.25);
+  }
+  .slider__play img {
+    width: auto;
+  }
+  .cirle-text span {
+    top: -53px;
+    transform-origin: 0 53px;
   }
 
   .gymnasium__text {
