@@ -12,6 +12,7 @@ if (document.querySelector(".swiper")) {
 
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
     autoplay: {
       delay: 2500,

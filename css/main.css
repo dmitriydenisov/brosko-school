@@ -58,6 +58,10 @@ a {
 .is-kindergarten .header {
   padding-bottom: 0;
 }
+.is-gymnasium .team,
+.is-kindergarten .team {
+  padding: 56px 0;
+}
 .header__content {
   padding-bottom: 75px;
 }
