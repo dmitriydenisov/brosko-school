@@ -500,6 +500,7 @@ a {
 .tabs-mobile {
   width: calc(100vw - 15px);
   overflow: hidden;
+  margin-top: 25px;
 }
 .additional-education__tabs {
   margin-top: 30px;
@@ -785,9 +786,7 @@ a {
 
   color: #e7eef8;
 }
-.team {
-  padding: 56px 0;
-}
+
 .team__tabs {
   display: flex;
   align-items: center;
@@ -842,6 +841,8 @@ a {
 .team__items--article {
   display: flex;
   flex-wrap: wrap;
+
+  margin-top: 25px;
 }
 .team__item--article {
   width: 100%;
@@ -1390,7 +1391,6 @@ a {
   position: relative;
   display: block;
   padding: 25px;
-  font-family: "San Francisco Pro Display Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -2033,6 +2033,9 @@ a {
     margin-right: 0;
     margin-top: 0;
   }
+  .team {
+    padding: 56px 0;
+  }
   .team__tab {
     font-size: 16px;
   }
@@ -2070,6 +2073,7 @@ a {
   }
   .team__content {
     width: 95%;
+    /* margin-top: 0; */
   }
   .footer__contacts--menu {
     display: flex;
@@ -2470,6 +2474,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 326px);
     gap: 20px;
+    margin-top: 0;
   }
   .team__item--article {
     width: 326px;
