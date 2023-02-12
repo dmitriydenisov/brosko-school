@@ -31,7 +31,7 @@ if (document.querySelector(".team__slider")) {
     },
     breakpoints: {
       700: {
-        slidesPerView: 2,
+        slidesPerView: 1.5,
         spaceBetween: 20,
       },
       1024: {
