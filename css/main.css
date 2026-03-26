@@ -353,7 +353,7 @@ a {
 }
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  width: auto;
+  //width: auto;
   left: 5px;
   bottom: 20px;
 }
