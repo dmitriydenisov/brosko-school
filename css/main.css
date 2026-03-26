@@ -354,7 +354,7 @@ a {
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   //width: auto;
-  left: 5px;
+  //left: 5px;
   bottom: 20px;
 }
 
@@ -1820,7 +1820,7 @@ a {
 
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    left: 177px;
+    //left: 177px;
   }
   .slider__title {
     font-size: 104px;
@@ -2062,7 +2062,7 @@ a {
 
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    left: 112px;
+    //left: 112px;
     bottom: 38px;
   }
   .social {
@@ -2294,7 +2294,7 @@ a {
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    left: 113px;
+    //left: 113px;
     bottom: 70px;
   }
   .slider__image {
